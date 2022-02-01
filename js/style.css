@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(2, 195, 243);
+    padding: 18px 18px;
+    border-bottom:2px black;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    content: "or";
+
+}
+.wrapper{
+    background-color: white;
+    border-radius: 7px;
+
+}
+
+.seperator{
+    width:100%;
+}

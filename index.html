@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="js/style.css">
+    </head>
+    <body style="background-color:rgb(96, 166, 236);"></h1>
+        <script>
+            navigator.geolocation
+            if('geolocation' in navigator){
+                console.log("Geolocation avaliable");
+                navigator.geolocation.getCurrentPosition(position =>{
+                    console.log(position.coords);
+                });
+            }else{
+                console.log('Geo Not Avaliable')
+            }
+        </script>
+       
+            <div class="wrapper">
+                <h1>Weather</h1>
+                <fieldset class="mt-3">
+                    <label for="city">Enter City: </label>
+                    <input type="text" name="city" id="city" class="form-control">
+                </fieldset>
+                <fieldset class="divider">
+                    <h5>or</h5>
+                    <div class="seperator">
+                        <button>Current Location</button>
+                        </div>
+
+                </fieldset>
+                <input type="submit" value="Search" class="mt-3">
+            </div>
+            </form>
+        </div>
+        <div class="list update">
+            <li class="High Temp", id="High"></li>
+            <li class="Low Temp", id="Low"></li>
+            <li class=" Humidity", id="Humidity"></li>
+        </div>
+
+    </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    
+</html>
